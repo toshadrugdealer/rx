@@ -6,7 +6,7 @@ import { RecipeItem } from "./recipe-item/RecipeItem";
 // const userId = 1;
 
 function App() {
-  const { isLoading, data } = useGetRecipesQuery();
+  const { isLoading, data } = useGetRecipesQuery(null);
 
   // (undefined, { skip: !userId });
   return (
