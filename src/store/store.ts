@@ -1,8 +1,8 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import { reducer as favoritesReduser } from "./favorites/favorites.slice";
-import { userSlice } from "./user/user.slice";
-import { api } from "./api/api";
 import { createLogger } from "redux-logger";
+import { api } from "./api/api";
+import { userSlice } from "./user/user.slice";
 
 const logger = createLogger({
   collapsed: true,
@@ -18,3 +18,5 @@ export const store = configureStore({
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware().concat(api.middleware).concat(logger),
 });
+
+export type RootState = ReturnType<typeof store.getState>;

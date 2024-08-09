@@ -1,7 +1,13 @@
 import styles from "./RecipeItem.module.css";
 import { useActions } from "../../hooks/useActions";
 import { useFavorites } from "../../hooks/useFavorites";
-export function RecipeItem({ recipe }) {
+import { IRecipe } from "../../types/recipe.types";
+
+interface IREcopeIcon {
+  recipe: IRecipe;
+}
+
+export function RecipeItem({ recipe }: IREcopeIcon) {
   const { favorites } = useFavorites();
 
   const { toggleFavorites } = useActions();
