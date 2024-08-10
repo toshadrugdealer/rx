@@ -6,7 +6,7 @@ export function Header() {
   const { favorites } = useFavorites();
   return (
     <header className={styles.header}>
-      <BsBookmarkHeart fontSize={20} />
+      <BsBookmarkHeart fontSize={40} />
       <span>{favorites.length}</span>
     </header>
   );
