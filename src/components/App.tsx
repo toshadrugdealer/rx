@@ -2,6 +2,7 @@ import { useGetRecipesQuery } from "../store/api/api";
 import { CreateRecipe } from "./create-recipe/CreateRecipe";
 import { Header } from "./header/Header";
 import { RecipeItem } from "./recipe-item/RecipeItem";
+import styles from "./App.module.css";
 
 // const userId = 1;
 
@@ -10,7 +11,7 @@ function App() {
 
   // (undefined, { skip: !userId });
   return (
-    <section>
+    <section className={styles.section}>
       <Header />
       <CreateRecipe />
       {/* <User /> */}
