@@ -8,7 +8,14 @@ import styles from "./App.module.css";
 
 function App() {
   const { isLoading, data } = useGetRecipesQuery(null);
-
+  const isPalindrome = (str: string) => {
+    if (str === str.split("").reverse().join("")) {
+      return console.log(`"${str}" палиндром`);
+    } else {
+      return console.log(`"${str}" не палиндром`);
+    }
+  };
+  isPalindrome("aboba");
   // (undefined, { skip: !userId });
   return (
     <section className={styles.section}>
