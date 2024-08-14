@@ -15,7 +15,7 @@ function App() {
       return console.log(`"${str}" не палиндром`);
     }
   };
-  isPalindrome("aboba");
+  // isPalindrome("aboba");
   // (undefined, { skip: !userId });
   return (
     <section className={styles.section}>
