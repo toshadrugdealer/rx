@@ -18,9 +18,12 @@
   right: 35px;
 }
 .modal {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   z-index: 1;
   position: absolute;
-  width: 60%;
+  width: 40%;
   min-height: 50px;
   background-color: #363636;
   border-radius: 5px;
